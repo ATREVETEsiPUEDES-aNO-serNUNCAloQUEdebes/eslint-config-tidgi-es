@@ -143,7 +143,7 @@ const tseslintConfig = tseslint.config(
 );
 
 export default [
-  // 基础配置，适用于所有文件
+  // Configuracion basica, aplicable a todos los archivos.
   {
     linterOptions: {
       reportUnusedDisableDirectives: true,
@@ -164,10 +164,10 @@ export default [
     ],
   },
 
-  // TypeScript/JavaScript 配置
+  // TypeScript/JavaScript Configuracion
   ...tseslintConfig,
 
-  // JSON 文件配置
+  // JSON Configuracion de archivos
   {
     files: ['**/*.json', '**/tiddlywiki.info'],
     ignores: ['package-lock.json', 'wiki/tiddlers/**/*.json'],
@@ -185,7 +185,7 @@ export default [
     },
   },
 
-  // Markdown 文件配置
+  // Markdown Configuracion de archivos
   {
     files: ['**/*.md'],
     plugins: { format },
@@ -202,7 +202,7 @@ export default [
     },
   },
 
-  // DPrint TypeScript/JavaScript 格式化配置
+  // DPrint TypeScript/JavaScript Configuracion del formato
   {
     files: ['**/*.{mjs,js,jsx,ts,tsx}'],
     ignores: ['wiki/tiddlers/**/*.js'],
